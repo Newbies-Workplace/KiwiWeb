@@ -1,0 +1,27 @@
+.LoginBox {
+    display: flex;
+    flex-flow: column;
+    height: 250px;
+    max-width: 400px;
+    width: 80%;
+    align-items: center;
+    background-color: #263238;
+    border-radius: 20px;
+}
+
+.LoginBoxContent {
+    display: flex;
+    flex-flow: column;
+    height: 100%;
+    width: 90%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.TopAccentBar {
+    display: flex;
+    height: 25px;
+    width: 100%;
+    background-color: #3B7302;
+    border-radius: 20px 20px 0 0;
+}

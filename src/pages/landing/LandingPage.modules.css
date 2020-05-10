@@ -1,0 +1,19 @@
+.Container {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-flow: column;
+
+    justify-content: center;
+    align-items: center;
+}
+
+.ButtonBar {
+    display: flex;
+    flex-flow: column;
+}
+
+.Logo {
+    height: 200px;
+    width: 200px;
+}

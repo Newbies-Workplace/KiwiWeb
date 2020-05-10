@@ -1,0 +1,20 @@
+{
+  "short_name": "Kiwi Web",
+  "name": "Kiwi Web - Music Player",
+  "icons": [
+    {
+      "src": "favicon.ico",
+      "sizes": "16x16",
+      "type": "image/x-icon"
+    },
+    {
+      "src": "kiwi-web-icon-500px.png",
+      "sizes": "500x500",
+      "type": "image/png"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#37474F"
+}
