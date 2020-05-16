@@ -6,24 +6,84 @@
 
     background-color: #263238;
 
-
     width: 100%;
     height: 55px;
+    min-height: 55px;
+}
+
+.Profile {
+    display: flex;
+    margin-left: 10px;
+    flex: 1;
+}
+
+.Profile span {
+    margin-left: 5px;
+    align-self: center;
+}
+
+.Profile img {
+    height: 35px;
+    width: 35px;
+    border-radius: 20px;
+}
+
+.Settings {
+    margin-right: 10px;
+    display: flex;
+    justify-content: flex-end;
+    flex: 1;
+}
+
+.Gear {
+    display: flex;
+    align-self: center;
+    background-color: transparent;
+    border: none;
+}
+
+.Gear img {
+    height: 35px;
+    width: 35px;
+}
+
+.Gear:hover {
+    cursor: pointer;
+    animation: spin 3s linear infinite;
 }
 
 .SearchInput {
+    display: flex;
+    align-self: center;
+    flex: 1;
+
+    margin-left: 10px;
+    margin-right: 10px;
+
     height: 30px;
-    margin-bottom: 5px;
     border-radius: 25px;
     padding-left: 35px;
     padding-right: 10px;
     background-repeat: no-repeat;
     font-size: large;
 
+    /*todo change icon to svg*/
     background-image: url('search-icon.png');
     background-position: 10px 50%;
 }
 
 .SearchInput:focus {
     outline: none;
+}
+
+@media (max-width: 600px) {
+    .Profile span {
+        display: none;
+    }
+}
+
+@keyframes spin {
+    100% {
+        transform:rotate(360deg);
+    }
 }

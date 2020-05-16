@@ -15,7 +15,7 @@ export const App: FC = () => {
                 <Route path="/landing" component={LandingPage} />
                 <Route path="/login" component={LoginPage} />
                 <Route path="/register" component={RegisterPage} />
-                <PrivateRoute exact path="/" component={HomePage} />
+                <PrivateRoute path="/" component={HomePage} />
                 <Redirect from="*" to="/" />
             </Switch>
         </Router>

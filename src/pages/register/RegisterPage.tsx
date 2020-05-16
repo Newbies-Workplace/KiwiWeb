@@ -38,7 +38,7 @@ export const RegisterPage: FC = () => {
             <input className={inputStyles.Input}
                    onChange={handleEmailInput}
                    name={"email"}
-                   placeholder={"user@kiwi.pl"}
+                   placeholder={"użytkownik@kiwi.pl"}
                    autoComplete={"email"}
                    value={email}/>
             <input className={inputStyles.Input}
