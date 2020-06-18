@@ -1,7 +1,8 @@
 import React, {FC} from "react";
 import * as styles from "./Toolbar.modules.css"
 import avatar from "./test-user-avatar.png"
-import gear from "./gear-icon.svg"
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faBars } from '@fortawesome/free-solid-svg-icons'
 import {AuthenticationService} from "../../../_services/AuthenticationService";
 import { useHistory } from "react-router-dom";
 
@@ -23,8 +24,11 @@ export const Toolbar: FC<ToolbarProps> = (props: ToolbarProps) => {
 
     return <div className={styles.Toolbar}>
         <div className={styles.Settings}>
-            <button className={styles.Gear}
-                    onClick={handleNavigationButton}><img src={gear} alt={"Ustawienia"}/></button>
+            <FontAwesomeIcon
+                className={styles.NavButton}
+                icon={faBars}
+                size={"2x"}
+                onClick={handleNavigationButton}/>
         </div>
 
         <input className={styles.SearchInput}

@@ -16,3 +16,29 @@
     min-width: 80px;
     width: 80px;
 }
+
+.NavigationItem {
+    display: flex;
+    flex-flow: column;
+
+    color: white;
+    text-decoration: none;
+
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    height: 80px;
+}
+
+.NavigationItem.Selected {
+    color: #3B7302;
+}
+
+.NavigationItem:hover {
+    background-color: #46575f;
+}
+
+.NavigationItem span {
+    margin-top: 5px;
+}

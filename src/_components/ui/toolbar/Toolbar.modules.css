@@ -35,25 +35,9 @@
     flex: 1;
 }
 
-.Gear {
-    display: flex;
-    align-self: center;
-    background-color: transparent;
-    border: none;
-}
-
-.Gear:focus {
-    outline: none;
-}
-
-.Gear img {
-    height: 35px;
-    width: 35px;
-}
-
-.Gear:hover {
+.NavButton {
     cursor: pointer;
-    animation: spin 3s linear infinite;
+    user-select: none;
 }
 
 .SearchInput {
@@ -83,11 +67,5 @@
 @media (max-width: 600px) {
     .Profile span {
         display: none;
-    }
-}
-
-@keyframes spin {
-    100% {
-        transform:rotate(360deg);
     }
 }
