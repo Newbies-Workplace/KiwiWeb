@@ -1,14 +1,24 @@
 import React, {FC} from "react";
 import * as styles from "./Navigation.modules.css"
+import cx from 'classnames'
 
-export const Navigation: FC = () => {
+interface NavigationProps {
+    isOpen: boolean;
+}
 
-    return <div className={styles.NavigationBar}>
+export const Navigation: FC<NavigationProps> = (props: NavigationProps) => {
+
+    let navClass = styles.NavigationBar;
+    if (props.isOpen) {
+        navClass = cx(styles.NavigationBar, styles.Opened)
+    }
+
+    return <nav className={navClass}>
         <ul>
             <li>heh</li>
             <li>heh</li>
             <li>heh</li>
             <li>heh</li>
         </ul>
-    </div>
+    </nav>
 };

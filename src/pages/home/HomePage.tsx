@@ -1,4 +1,4 @@
-import React, {FC} from "react";
+import React, {FC, useState} from "react";
 import {Toolbar} from "../../_components/ui/toolbar/Toolbar";
 import * as styles from "./HomePage.modules.css"
 import {Route, Switch} from "react-router-dom";
@@ -6,11 +6,18 @@ import {SongPage} from "../song/SongPage";
 import {Navigation} from "../../_components/ui/navigation/Navigation";
 
 export const HomePage: FC = () => {
+    const [isNavOpen, setNavOpen] = useState<boolean>(true);
+
+    const toggleNavigation = () => {
+        setNavOpen(!isNavOpen)
+    };
 
     return <div className={styles.Container}>
-        <Toolbar/>
+        <Toolbar handleNavigationButton={toggleNavigation}/>
         <div className={styles.NavContainer}>
-            <Navigation/>
+
+            <Navigation isOpen={isNavOpen}/>
+
             <div className={styles.Content}>
                 <Switch>
                     <Route exact path={"/"} component={() => <div>test</div>} />
